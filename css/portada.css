@@ -1,0 +1,447 @@
+/* ============================= */
+/*      PALETA DE HUELLITAS      */
+/* ============================= */
+
+:root {
+    --marron: #6B3E2E;
+    --crema: #F8F1E7;
+    --durazno: #E9A77B;
+    --verde: #A8B89A;
+    --rosa: #E8A09A;
+    --azul: #9EADD0;
+    --amarillo: #E8C77A;
+    --blanco: #FFFDF9;
+}
+
+
+/* ============================= */
+/*          CONFIGURACIÓN        */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--marron);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/*       BARRA DE NAVEGACIÓN     */
+/* ============================= */
+
+header {
+    background-color: var(--blanco);
+    padding: 15px 7%;
+    box-shadow: 0 3px 10px rgba(107, 62, 46, 0.12);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav h2 {
+    color: var(--marron);
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--marron);
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+
+/* Cuando pasas el mouse */
+
+nav ul li a:hover {
+    background-color: var(--durazno);
+    color: white;
+}
+
+
+/* ============================= */
+/*            PORTADA            */
+/* ============================= */
+
+.portada {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portada img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Texto encima de la imagen */
+
+.texto-portada {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+
+    max-width: 480px;
+
+    background-color: rgba(255, 253, 249, 0.90);
+
+    padding: 35px;
+    border-radius: 25px;
+
+    box-shadow: 0 8px 25px rgba(107, 62, 46, 0.18);
+}
+
+
+.texto-portada h1 {
+    color: var(--marron);
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+
+.texto-portada p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #5C4439;
+}
+
+
+/* Botón de la portada */
+
+.texto-portada a {
+    display: inline-block;
+
+    background-color: var(--durazno);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 12px 22px;
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+
+.texto-portada a:hover {
+    background-color: var(--marron);
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/*          BIENVENIDA           */
+/* ============================= */
+
+.bienvenida {
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 0 25px;
+    text-align: center;
+}
+
+
+.bienvenida h2 {
+    color: var(--marron);
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+
+.bienvenida h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background-color: var(--durazno);
+
+    margin: 12px auto;
+    border-radius: 10px;
+}
+
+
+.bienvenida p {
+    color: #60483D;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+
+/* ============================= */
+/*        ¿CÓMO AYUDAR?          */
+/* ============================= */
+
+.ayuda {
+    padding: 70px 7%;
+    background-color: #FFF8F1;
+    text-align: center;
+}
+
+
+.ayuda h2 {
+    font-size: 32px;
+    color: var(--marron);
+    margin-bottom: 40px;
+}
+
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.tarjetas article {
+    background-color: var(--blanco);
+
+    width: 30%;
+    padding: 30px 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 18px rgba(107, 62, 46, 0.10);
+
+    transition: 0.3s;
+}
+
+
+.tarjetas article:hover {
+    transform: translateY(-7px);
+}
+
+
+/* Colores diferentes para cada tarjeta */
+
+.tarjetas article:nth-child(1) {
+    border-top: 5px solid var(--verde);
+}
+
+.tarjetas article:nth-child(2) {
+    border-top: 5px solid var(--rosa);
+}
+
+.tarjetas article:nth-child(3) {
+    border-top: 5px solid var(--azul);
+}
+
+
+.tarjetas h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: var(--marron);
+}
+
+
+.tarjetas p {
+    color: #60483D;
+    margin-bottom: 20px;
+}
+
+
+.tarjetas a {
+    display: inline-block;
+
+    color: var(--marron);
+    text-decoration: none;
+    font-weight: bold;
+
+    border-bottom: 2px solid var(--amarillo);
+
+    padding-bottom: 3px;
+}
+
+
+/* ============================= */
+/*       INVITACIÓN FINAL        */
+/* ============================= */
+
+.invitacion {
+    text-align: center;
+
+    padding: 75px 20px;
+
+    background-color: #F2D7C7;
+}
+
+
+.invitacion h2 {
+    color: var(--marron);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+.invitacion p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #60483D;
+    font-size: 17px;
+}
+
+
+.invitacion a {
+    display: inline-block;
+
+    background-color: var(--marron);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 13px 25px;
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+
+.invitacion a:hover {
+    background-color: var(--durazno);
+}
+
+
+/* ============================= */
+/*             FOOTER            */
+/* ============================= */
+
+footer {
+    background-color: var(--marron);
+    color: var(--crema);
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 0;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ============================= */
+/*        DISEÑO RESPONSIVE      */
+/* ============================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .portada img {
+        height: 500px;
+    }
+
+
+    .texto-portada {
+        left: 5%;
+        right: 5%;
+        max-width: none;
+        text-align: center;
+    }
+
+
+    .texto-portada h1 {
+        font-size: 30px;
+    }
+
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .tarjetas article {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    nav h2 {
+        font-size: 24px;
+    }
+
+
+    nav ul {
+        gap: 3px;
+    }
+
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+
+    .portada img {
+        height: 520px;
+    }
+
+
+    .texto-portada {
+        padding: 25px 20px;
+    }
+
+
+    .texto-portada h1 {
+        font-size: 26px;
+    }
+
+
+    .texto-portada p {
+        font-size: 15px;
+    }
+
+
+    .bienvenida h2,
+    .ayuda h2,
+    .invitacion h2 {
+        font-size: 27px;
+    }
+
+}

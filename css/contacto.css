@@ -1,0 +1,416 @@
+/* ============================= */
+/*      PALETA DE HUELLITAS      */
+/* ============================= */
+
+:root {
+    --marron: #6B3E2E;
+    --crema: #F8F1E7;
+    --durazno: #E9A77B;
+    --verde: #A8B89A;
+    --rosa: #E8A09A;
+    --azul: #9EADD0;
+    --azul-claro: #E9EDF8;
+    --amarillo: #E8C77A;
+    --blanco: #FFFDF9;
+}
+
+
+/* ============================= */
+/*      CONFIGURACIÓN GENERAL    */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--marron);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/*       BARRA DE NAVEGACIÓN     */
+/* ============================= */
+
+header {
+    background-color: var(--blanco);
+    padding: 15px 7%;
+
+    box-shadow: 0 3px 10px rgba(107, 62, 46, 0.12);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav h2 {
+    color: var(--marron);
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    color: var(--marron);
+    font-weight: bold;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--azul);
+    color: white;
+}
+
+
+/* ============================= */
+/*           CONTACTO            */
+/* ============================= */
+
+.contacto {
+    max-width: 1100px;
+
+    margin: 70px auto;
+
+    padding: 0 25px;
+}
+
+.contacto > h1 {
+    text-align: center;
+
+    color: var(--marron);
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.contacto > p {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    color: #60483D;
+
+    font-size: 17px;
+}
+
+
+/* ============================= */
+/*      CONTENEDOR PRINCIPAL     */
+/* ============================= */
+
+.informacion-contacto,
+.formulario {
+    background-color: var(--blanco);
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    box-shadow: 0 5px 18px rgba(107, 62, 46, 0.10);
+}
+
+
+/* ============================= */
+/*     INFORMACIÓN DE CONTACTO   */
+/* ============================= */
+
+.informacion-contacto {
+    border-top: 5px solid var(--azul);
+
+    margin-bottom: 35px;
+}
+
+.informacion-contacto h2 {
+    color: var(--marron);
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+.informacion-contacto p {
+    color: #60483D;
+
+    margin-bottom: 13px;
+
+    font-size: 16px;
+}
+
+.informacion-contacto a {
+    color: var(--marron);
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid var(--azul);
+}
+
+.informacion-contacto a:hover {
+    color: #4E6B9E;
+}
+
+
+/* ============================= */
+/*           FORMULARIO          */
+/* ============================= */
+
+.formulario {
+    border-top: 5px solid var(--azul);
+}
+
+.formulario h2 {
+    color: var(--marron);
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+.formulario > p {
+    color: #60483D;
+
+    margin-bottom: 30px;
+}
+
+
+/* Etiquetas */
+
+.formulario label {
+    display: block;
+
+    color: var(--marron);
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* Campos */
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #D9DEED;
+
+    border-radius: 12px;
+
+    background-color: #FCFCFE;
+
+    color: var(--marron);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Cuando hacemos clic en un campo */
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+
+    border-color: var(--azul);
+
+    background-color: white;
+
+    box-shadow: 0 0 0 3px rgba(158, 173, 208, 0.20);
+}
+
+
+/* Área de mensaje */
+
+.formulario textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+
+/* ============================= */
+/*            BOTÓN              */
+/* ============================= */
+
+.formulario button {
+    display: block;
+
+    margin: 10px auto 0;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: var(--azul);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: var(--marron);
+
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/*        MENSAJE FINAL          */
+/* ============================= */
+
+.contacto::after {
+    content: "🐾 Gracias por querer ser parte de la familia Huellitas ❤️";
+
+    display: block;
+
+    text-align: center;
+
+    margin: 55px auto 10px;
+
+    padding: 30px;
+
+    max-width: 800px;
+
+    background-color: var(--azul-claro);
+
+    border-radius: 20px;
+
+    color: var(--marron);
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ============================= */
+/*             FOOTER            */
+/* ============================= */
+
+footer {
+    background-color: var(--marron);
+
+    color: var(--crema);
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ============================= */
+/*       DISEÑO RESPONSIVE       */
+/* ============================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .contacto {
+        margin-top: 45px;
+    }
+
+}
+
+
+/* ============================= */
+/*        CELULARES              */
+/* ============================= */
+
+@media (max-width: 500px) {
+
+    nav h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 3px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+
+        font-size: 13px;
+    }
+
+    .contacto {
+        padding: 0 15px;
+    }
+
+    .contacto > h1 {
+        font-size: 29px;
+    }
+
+    .informacion-contacto,
+    .formulario {
+        padding: 25px 20px;
+    }
+
+    .informacion-contacto h2,
+    .formulario h2 {
+        font-size: 24px;
+    }
+
+    .contacto::after {
+        font-size: 16px;
+
+        padding: 25px 15px;
+    }
+
+}

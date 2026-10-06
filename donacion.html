@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donación | Huellitas</title>
+
+    <link rel="stylesheet" href="/css/donacion.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+
+        <nav>
+
+            <h2>🐾 HUELLITAS</h2>
+
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="adopta.html">ADOPTA</a></li>
+                <li><a href="donacion.html">DONACIÓN</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="introduccion-donacion">
+
+            <h1>❤️ Ayúdanos a seguir dejando huellitas</h1>
+
+            <p>
+                Sabemos que abrir las puertas de tu hogar a un nuevo
+                compañero es una decisión importante y llena de amor.
+                Pero también sabemos que no todos pueden adoptar en
+                este momento.
+            </p>
+
+            <p>
+                <strong>
+                    Si no puedes adoptar un compañerito por falta de
+                    tiempo, puedes apoyarnos con sus gastos.
+                </strong>
+            </p>
+
+            <p>
+                Cada aporte, sin importar su tamaño, nos ayuda a
+                brindarles alimento, cuidados y la atención que
+                necesitan mientras esperan encontrar una familia.
+            </p>
+
+            <p>
+                🐾 <strong>Cada granito de arena cuenta.</strong>
+                Gracias por ser parte de su historia.
+            </p>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!--       ¿EN QUÉ AYUDAS?          -->
+        <!-- ============================== -->
+
+        <section class="destino-donaciones">
+
+            <h2>🐾 ¿En qué se utiliza tu donación?</h2>
+
+            <div class="tarjetas-ayuda">
+
+                <article>
+                    <h3>🥣 Alimentación</h3>
+
+                    <p>
+                        Nos ayuda a proporcionar alimento diario
+                        a nuestros perritos y gatitos.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>🩺 Atención veterinaria</h3>
+
+                    <p>
+                        Contribuye con chequeos, medicamentos,
+                        vacunas y tratamientos.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>🛁 Cuidados</h3>
+
+                    <p>
+                        Permite mantener a nuestros peluditos
+                        limpios, saludables y cómodos.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>🏠 Refugio</h3>
+
+                    <p>
+                        Ayuda con el mantenimiento de los espacios
+                        donde nuestros animales esperan un hogar.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!--          FORMAS DE DONAR       -->
+        <!-- ============================== -->
+
+        <section class="formas-donar">
+
+            <h2>❤️ Elige cómo quieres ayudar</h2>
+
+            <p>
+                Selecciona la opción que prefieras. Tu ayuda puede
+                convertirse en comida, cuidados y nuevas oportunidades.
+            </p>
+
+
+            <form>
+
+
+                <!-- DONACIÓN LIBRE -->
+
+                <div class="opcion-donacion">
+
+                    <input type="radio"
+                           id="dinero"
+                           name="tipo-donacion"
+                           value="donacion-dinero">
+
+                    <label for="dinero">
+
+                        <h3>💰 Dona dinero</h3>
+
+                        <p>
+                            Cada granito de arena cuenta.
+                            Elige libremente cuánto deseas aportar.
+                        </p>
+
+                        <label for="monto">
+                            ¿Cuánto deseas donar?
+                        </label>
+
+                        <input type="number"
+                               id="monto"
+                               name="monto"
+                               min="1"
+                               placeholder="S/ 0.00">
+
+                    </label>
+
+                </div>
+
+
+                <!-- BAÑO -->
+
+                <div class="opcion-donacion">
+
+                    <input type="radio"
+                           id="banio"
+                           name="tipo-donacion"
+                           value="banio-corte">
+
+                    <label for="banio">
+
+                        <h3>🛁 Baño y corte — S/ 30</h3>
+
+                        <p>
+                            Ayúdanos a mantener a uno de nuestros
+                            peluditos limpio, cómodo y saludable.
+                        </p>
+
+                    </label>
+
+                </div>
+
+
+                <!-- VETERINARIO -->
+
+                <div class="opcion-donacion">
+
+                    <input type="radio"
+                           id="veterinario"
+                           name="tipo-donacion"
+                           value="chequeo-veterinario">
+
+                    <label for="veterinario">
+
+                        <h3>🩺 Chequeo veterinario — S/ 50</h3>
+
+                        <p>
+                            Tu aporte puede ayudar a cubrir el
+                            chequeo veterinario de uno de nuestros
+                            compañeros.
+                        </p>
+
+                    </label>
+
+                </div>
+
+
+                <!-- ALIMENTACIÓN -->
+
+                <div class="opcion-donacion">
+
+                    <input type="radio"
+                           id="alimentacion"
+                           name="tipo-donacion"
+                           value="alimentacion">
+
+                    <label for="alimentacion">
+
+                        <h3>🥣 Alimentación — S/ 20</h3>
+
+                        <p>
+                            Ayúdanos a cubrir parte de la alimentación
+                            diaria de nuestros peluditos.
+                        </p>
+
+                    </label>
+
+                </div>
+
+
+                <!-- VACUNACIÓN -->
+
+                <div class="opcion-donacion">
+
+                    <input type="radio"
+                           id="vacuna"
+                           name="tipo-donacion"
+                           value="vacunacion">
+
+                    <label for="vacuna">
+
+                        <h3>💉 Vacunación — S/ 40</h3>
+
+                        <p>
+                            Contribuye con las vacunas necesarias
+                            para mantenerlos protegidos.
+                        </p>
+
+                    </label>
+
+                </div>
+
+
+                <button type="submit">
+                    ❤️ Quiero ayudar
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!--       MÉTODOS DE DONACIÓN     -->
+        <!-- ============================== -->
+
+        <section class="metodos-donacion">
+
+            <h2>💳 Formas de realizar tu aporte</h2>
+
+            <p>
+                Puedes realizar tu donación mediante cualquiera
+                de estos medios:
+            </p>
+
+
+            <div class="metodos">
+
+                <article>
+
+                    <h3>📱 Yape</h3>
+
+                    <p>
+                        Número: <strong>999 999 999</strong>
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>📱 Plin</h3>
+
+                    <p>
+                        Número: <strong>999 999 999</strong>
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>🏦 Transferencia bancaria</h3>
+
+                    <p>
+                        Banco: Banco Huellitas
+                    </p>
+
+                    <p>
+                        Cuenta: 000-0000000000
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!--       MENSAJE FINAL            -->
+        <!-- ============================== -->
+
+        <section class="mensaje-final">
+
+            <h2>🐾 Tu ayuda deja una huellita</h2>
+
+            <p>
+                Tal vez para ti sea una pequeña ayuda,
+                pero para uno de nuestros peluditos puede
+                significar alimento, atención, cuidado
+                y una oportunidad más para esperar por su hogar.
+            </p>
+
+            <p>
+                <strong>
+                    Gracias por ayudarnos a darles la vida
+                    y el amor que merecen. ❤️
+                </strong>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>🐾 HUELLITAS</p>
+
+        <p>
+            Dejando huellitas de amor en tu hogar ❤️
+        </p>
+
+        <p>
+            © 2026 Huellitas - Refugio y Adopción
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

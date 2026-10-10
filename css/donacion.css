@@ -1,7 +1,4 @@
-/* ============================= */
-/*      PALETA DE HUELLITAS       */
-/* ============================= */
-
+/* Paleta de Colores */
 :root {
     --marron: #6B3E2E;
     --crema: #F8F1E7;
@@ -13,11 +10,6 @@
     --amarillo: #E8C77A;
     --blanco: #FFFDF9;
 }
-
-
-/* ============================= */
-/*       CONFIGURACIÓN GENERAL    */
-/* ============================= */
 
 * {
     box-sizing: border-box;
@@ -32,10 +24,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* ============================= */
-/*       BARRA DE NAVEGACIÓN      */
-/* ============================= */
+/* Barra de navegación */
 
 header {
     background-color: var(--blanco);
@@ -76,10 +65,7 @@ nav ul li a:hover {
     color: white;
 }
 
-
-/* ============================= */
-/*        INTRODUCCIÓN            */
-/* ============================= */
+/*Introducción */
 
 .introduccion-donacion {
     text-align: center;
@@ -110,10 +96,7 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-
-/* ============================= */
-/*     ¿EN QUÉ AYUDA TU APORTE?  */
-/* ============================= */
+/* En qué ayuda el aporte */
 
 .destino-donaciones {
     background-color: #FFF8F5;
@@ -162,10 +145,7 @@ nav ul li a:hover {
     color: #60483D;
 }
 
-
-/* ============================= */
-/*        FORMAS DE DONAR         */
-/* ============================= */
+/* Formas de donar */
 
 .formas-donar {
     max-width: 1000px;
@@ -186,10 +166,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-
-/* ============================= */
-/*       TARJETAS DE DONACIÓN     */
-/* ============================= */
+/* Tarjetas de donación */
 
 .opcion-donacion {
     background-color: var(--blanco);
@@ -204,9 +181,6 @@ nav ul li a:hover {
 
     transition: 0.3s;
 }
-
-
-/* Efecto al pasar el mouse */
 
 .opcion-donacion:hover {
     border-color: var(--rosa);
@@ -249,10 +223,7 @@ nav ul li a:hover {
     margin-left: 28px;
 }
 
-
-/* ============================= */
-/*        MONTO PERSONALIZADO     */
-/* ============================= */
+/* Monto personalizado */
 
 .opcion-donacion label {
     cursor: pointer;
@@ -290,10 +261,7 @@ nav ul li a:hover {
     border-color: var(--rosa);
 }
 
-
-/* ============================= */
-/*       BOTÓN DE DONACIÓN        */
-/* ============================= */
+/* Botón de donación */
 
 .formas-donar button {
     display: block;
@@ -321,10 +289,7 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-
-/* ============================= */
-/*       MÉTODOS DE DONACIÓN      */
-/* ============================= */
+/* Métodos de donación */
 
 .metodos-donacion {
     background-color: #F2E8E2;
@@ -375,10 +340,7 @@ nav ul li a:hover {
     color: #60483D;
 }
 
-
-/* ============================= */
-/*          MENSAJE FINAL         */
-/* ============================= */
+/* Mensaje final */
 
 .mensaje-final {
     text-align: center;
@@ -404,10 +366,7 @@ nav ul li a:hover {
     font-size: 17px;
 }
 
-
-/* ============================= */
-/*             FOOTER             */
-/* ============================= */
+/* Pie de página */
 
 footer {
     background-color: var(--marron);
@@ -422,10 +381,7 @@ footer p {
     margin: 5px;
 }
 
-
-/* ============================= */
-/*       DISEÑO RESPONSIVE        */
-/* ============================= */
+/* Diseño responsivo */
 
 @media (max-width: 850px) {
 

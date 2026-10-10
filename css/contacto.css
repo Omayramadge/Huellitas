@@ -1,7 +1,4 @@
-/* ============================= */
-/*      PALETA DE HUELLITAS      */
-/* ============================= */
-
+/* Paleta de colores */
 :root {
     --marron: #6B3E2E;
     --crema: #F8F1E7;
@@ -13,11 +10,6 @@
     --amarillo: #E8C77A;
     --blanco: #FFFDF9;
 }
-
-
-/* ============================= */
-/*      CONFIGURACIÓN GENERAL    */
-/* ============================= */
 
 * {
     box-sizing: border-box;
@@ -32,10 +24,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* ============================= */
-/*       BARRA DE NAVEGACIÓN     */
-/* ============================= */
+/* Barra de Navegación */
 
 header {
     background-color: var(--blanco);
@@ -83,10 +72,7 @@ nav ul li a:hover {
     color: white;
 }
 
-
-/* ============================= */
-/*           CONTACTO            */
-/* ============================= */
+/* Contacto */
 
 .contacto {
     max-width: 1100px;
@@ -118,10 +104,7 @@ nav ul li a:hover {
     font-size: 17px;
 }
 
-
-/* ============================= */
-/*      CONTENEDOR PRINCIPAL     */
-/* ============================= */
+/* Contenedor principal */
 
 .informacion-contacto,
 .formulario {
@@ -134,10 +117,7 @@ nav ul li a:hover {
     box-shadow: 0 5px 18px rgba(107, 62, 46, 0.10);
 }
 
-
-/* ============================= */
-/*     INFORMACIÓN DE CONTACTO   */
-/* ============================= */
+/* Información de contacto */
 
 .informacion-contacto {
     border-top: 5px solid var(--azul);
@@ -175,10 +155,7 @@ nav ul li a:hover {
     color: #4E6B9E;
 }
 
-
-/* ============================= */
-/*           FORMULARIO          */
-/* ============================= */
+/* Formulario */
 
 .formulario {
     border-top: 5px solid var(--azul);
@@ -260,11 +237,6 @@ nav ul li a:hover {
     min-height: 150px;
 }
 
-
-/* ============================= */
-/*            BOTÓN              */
-/* ============================= */
-
 .formulario button {
     display: block;
 
@@ -295,10 +267,7 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-
-/* ============================= */
-/*        MENSAJE FINAL          */
-/* ============================= */
+/* Mensaje final */
 
 .contacto::after {
     content: "🐾 Gracias por querer ser parte de la familia Huellitas ❤️";
@@ -324,10 +293,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-
-/* ============================= */
-/*             FOOTER            */
-/* ============================= */
+/* Pie de página */
 
 footer {
     background-color: var(--marron);
@@ -343,10 +309,7 @@ footer p {
     margin: 5px;
 }
 
-
-/* ============================= */
-/*       DISEÑO RESPONSIVE       */
-/* ============================= */
+/* Diseño responsivo */
 
 @media (max-width: 800px) {
 
@@ -368,10 +331,7 @@ footer p {
 
 }
 
-
-/* ============================= */
-/*        CELULARES              */
-/* ============================= */
+/* Contacto */
 
 @media (max-width: 500px) {
 

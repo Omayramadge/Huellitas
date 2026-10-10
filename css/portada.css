@@ -1,7 +1,4 @@
-/* ============================= */
-/*      PALETA DE HUELLITAS      */
-/* ============================= */
-
+/* Paleta de colores */
 :root {
     --marron: #6B3E2E;
     --crema: #F8F1E7;
@@ -12,11 +9,6 @@
     --amarillo: #E8C77A;
     --blanco: #FFFDF9;
 }
-
-
-/* ============================= */
-/*          CONFIGURACIÓN        */
-/* ============================= */
 
 * {
     box-sizing: border-box;
@@ -31,10 +23,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* ============================= */
-/*       BARRA DE NAVEGACIÓN     */
-/* ============================= */
+/* Barra de Navegación */
 
 header {
     background-color: var(--blanco);
@@ -70,18 +59,12 @@ nav ul li a {
     transition: 0.3s;
 }
 
-
-/* Cuando pasas el mouse */
-
 nav ul li a:hover {
     background-color: var(--durazno);
     color: white;
 }
 
-
-/* ============================= */
-/*            PORTADA            */
-/* ============================= */
+/* Portada */
 
 .portada {
     position: relative;
@@ -154,10 +137,7 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-
-/* ============================= */
-/*          BIENVENIDA           */
-/* ============================= */
+/* Bienvenida */
 
 .bienvenida {
     max-width: 950px;
@@ -194,10 +174,7 @@ nav ul li a:hover {
     margin-bottom: 12px;
 }
 
-
-/* ============================= */
-/*        ¿CÓMO AYUDAR?          */
-/* ============================= */
+/* Ayuda */
 
 .ayuda {
     padding: 70px 7%;
@@ -281,10 +258,7 @@ nav ul li a:hover {
     padding-bottom: 3px;
 }
 
-
-/* ============================= */
-/*       INVITACIÓN FINAL        */
-/* ============================= */
+/* Invitación Final*/
 
 .invitacion {
     text-align: center;
@@ -330,10 +304,7 @@ nav ul li a:hover {
     background-color: var(--durazno);
 }
 
-
-/* ============================= */
-/*             FOOTER            */
-/* ============================= */
+/* Pie de página */
 
 footer {
     background-color: var(--marron);
@@ -351,10 +322,7 @@ footer p {
     margin: 5px;
 }
 
-
-/* ============================= */
-/*        DISEÑO RESPONSIVE      */
-/* ============================= */
+/* Diseño Responsivo */
 
 @media (max-width: 800px) {
 

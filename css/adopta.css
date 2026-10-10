@@ -1,7 +1,4 @@
-/* ============================= */
-/*      PALETA DE HUELLITAS      */
-/* ============================= */
-
+/* Paleta de colores */
 :root {
     --marron: #6B3E2E;
     --crema: #F8F1E7;
@@ -13,11 +10,6 @@
     --amarillo: #E8C77A;
     --blanco: #FFFDF9;
 }
-
-
-/* ============================= */
-/*      CONFIGURACIÓN GENERAL    */
-/* ============================= */
 
 * {
     box-sizing: border-box;
@@ -32,10 +24,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* ============================= */
-/*       BARRA DE NAVEGACIÓN     */
-/* ============================= */
+/* Barra de navegación */
 
 header {
     background-color: var(--blanco);
@@ -82,10 +71,7 @@ nav ul li a:hover {
     color: white;
 }
 
-
-/* ============================= */
-/*       INTRODUCCIÓN ADOPTA     */
-/* ============================= */
+/* Introducción */
 
 .introduccion-adopta {
     text-align: center;
@@ -128,10 +114,7 @@ nav ul li a:hover {
     margin-bottom: 12px;
 }
 
-
-/* ============================= */
-/*       SECCIÓN PERRITOS        */
-/* ============================= */
+/* Sección Perritos */
 
 .perritos {
     padding: 65px 6%;
@@ -150,10 +133,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-
-/* ============================= */
-/*        SECCIÓN GATITOS        */
-/* ============================= */
+/* Sección Gatitos */
 
 .gatitos {
     padding: 65px 6%;
@@ -161,10 +141,7 @@ nav ul li a:hover {
     background-color: #FFF8F5;
 }
 
-
-/* ============================= */
-/*       CONTENEDOR TARJETAS     */
-/* ============================= */
+/* Contenedor de tarjetas */
 
 .contenedor-mascotas {
     display: grid;
@@ -178,10 +155,6 @@ nav ul li a:hover {
     margin: auto;
 }
 
-
-/* ============================= */
-/*       TARJETAS MASCOTAS       */
-/* ============================= */
 
 .tarjeta-mascota {
     background-color: var(--blanco);
@@ -198,18 +171,13 @@ nav ul li a:hover {
 }
 
 
-/* Efecto al pasar el mouse */
-
 .tarjeta-mascota:hover {
     transform: translateY(-8px);
 
     box-shadow: 0 10px 25px rgba(107, 62, 46, 0.18);
 }
 
-
-/* ============================= */
-/*            IMÁGENES           */
-/* ============================= */
+/* Imágenes */
 
 .tarjeta-mascota img {
     width: 100%;
@@ -221,10 +189,7 @@ nav ul li a:hover {
     display: block;
 }
 
-
-/* ============================= */
-/*       INFORMACIÓN TARJETA     */
-/* ============================= */
+/* Información de la tarjeta */
 
 .tarjeta-mascota h3 {
     color: var(--marron);
@@ -246,10 +211,7 @@ nav ul li a:hover {
     color: var(--marron);
 }
 
-
-/* ============================= */
-/*       BOTÓN CONOCER            */
-/* ============================= */
+/* Botón de conocer */
 
 .tarjeta-mascota a {
     display: block;
@@ -280,10 +242,6 @@ nav ul li a:hover {
 }
 
 
-/* ============================= */
-/*    COLORES ALTERNADOS          */
-/* ============================= */
-
 /* Algunas tarjetas tendrán pequeños detalles de otros colores */
 
 .tarjeta-mascota:nth-child(3n + 1) {
@@ -298,10 +256,7 @@ nav ul li a:hover {
     border-top: 4px solid var(--amarillo);
 }
 
-
-/* ============================= */
-/*       PROCESO ADOPCIÓN        */
-/* ============================= */
+/* Proceso de adopción */
 
 .proceso-adopcion {
     padding: 75px 6%;
@@ -367,10 +322,7 @@ nav ul li a:hover {
     color: #60483D;
 }
 
-
-/* ============================= */
-/*      HISTORIAS DE ADOPCIÓN    */
-/* ============================= */
+/* Historias de adopción */
 
 .historias-adopcion {
     padding: 75px 7%;
@@ -439,10 +391,7 @@ nav ul li a:hover {
     color: #60483D;
 }
 
-
-/* ============================= */
-/*             FOOTER            */
-/* ============================= */
+/* Pie de página */
 
 footer {
     background-color: var(--marron);

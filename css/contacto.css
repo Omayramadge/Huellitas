@@ -28,48 +28,104 @@ body {
 
 header {
     background-color: var(--blanco);
-    padding: 15px 7%;
-
-    box-shadow: 0 3px 10px rgba(107, 62, 46, 0.12);
+    padding: 7px 4%;
+    box-shadow: 0 2px 8px rgba(107, 62, 46, 0.10);
+    position: relative;
+    z-index: 2;
 }
 
 nav {
+    max-width: 1250px;
+    min-height: 48px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    max-width: 1200px;
-    margin: auto;
+    gap: 25px;
 }
 
-nav h2 {
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     color: var(--marron);
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo span {
+    font-size: 35px;
 }
 
 nav ul {
-    list-style: none;
-
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-
-    color: var(--marron);
-    font-weight: bold;
-
-    padding: 10px 18px;
-
+    display: block;
+    padding: 8px 20px;
     border-radius: 25px;
-
-    transition: 0.3s;
+    color: var(--marron);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.25s, color 0.25s;
 }
 
+nav ul li a.activo,
 nav ul li a:hover {
-    background-color: var(--azul);
+    background-color: #9EADD0;
     color: white;
+}
+/* Portada de contacto */
+.introduccion-contacto {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.introduccion-contacto > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.texto-portada {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+    transform: translateY(-50%);
+    width: 550px;
+    max-width: 100%;
+    padding: 15px 27px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.texto-portada h1 {
+    color: var(--marron);
+    font-size: 50px;
+    padding-bottom: 10px;
+    line-height: 1.15;
+}
+
+.texto-portada p {
+    color: #60483D;
+    font-size: 18px;
+    line-height: 1.30;
 }
 
 /* Contacto */
@@ -296,17 +352,49 @@ nav ul li a:hover {
 /* Pie de página */
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 16px 5%;
     background-color: var(--marron);
-
     color: var(--crema);
-
-    text-align: center;
-
-    padding: 30px 20px;
+    font-size: 12px;
 }
 
 footer p {
-    margin: 5px;
+    margin: 0;
+}
+
+.footer-logo {
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(255, 253, 249, 0.7);
+    border-radius: 50%;
+    color: var(--blanco);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.25s;
+}
+
+.redes a:hover {
+    background-color: var(--durazno);
 }
 
 /* Diseño responsivo */

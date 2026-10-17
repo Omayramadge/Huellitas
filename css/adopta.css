@@ -83,55 +83,57 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Introducción */
+/* Portada de adopta */
 
-.introduccion-adopta {
-    text-align: center;
-
-    max-width: 850px;
-
-    margin: 70px auto 55px;
-
-    padding: 0 25px;
-}
-
-.introduccion-adopta h1 {
-    color: var(--marron);
-
-    font-size: 38px;
-
-    margin-bottom: 20px;
-}
-
-.introduccion-adopta h1::after {
-    content: "";
-
+.introduccion-adopta > img {
     display: block;
-
-    width: 75px;
-    height: 4px;
-
-    background-color: var(--verde);
-
-    margin: 15px auto;
-
-    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.introduccion-adopta p {
+.texto-portada {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+
+.introduccion-adopta .texto-portada h1 {
+    margin: 0 auto 20px;
+    color: var(--marron);
+    font-size: 41px;
+    width: 100%;
+    max-width: 650px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.introduccion-adopta .texto-portada h1::after {
+    content: none;
+}
+
+.introduccion-adopta .texto-portada p {
     color: #60483D;
-
-    font-size: 17px;
-
-    margin-bottom: 12px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 10px;
+    line-height: 1.55;
+    text-align: center;
 }
 
 /* Sección Perritos */
 
 .perritos {
-    padding: 65px 6%;
-
+    padding: 35px 25px;
     background-color: #F3F6EF;
+    min-width: 0;
 }
 
 .perritos > h2,
@@ -148,9 +150,9 @@ nav ul li a:hover {
 /* Sección Gatitos */
 
 .gatitos {
-    padding: 65px 6%;
-
+    padding: 35px 25px;
     background-color: #FFF8F5;
+    min-width: 0;
 }
 
 /* Contenedor de tarjetas */
@@ -449,6 +451,113 @@ footer p {
 
 .redes a:hover {
     background-color: var(--durazno);
+}
+
+/* Perritos y gatitos en dos columnas */
+
+.contenedor-adopciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.contenedor-adopciones .contenedor-mascotas {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.contenedor-adopciones .tarjeta-mascota img {
+    height: 100px;
+}
+
+.contenedor-adopciones .tarjeta-mascota h3 {
+    font-size: 16px;
+    margin: 8px 5px 3px;
+    text-align: center;
+}
+
+.contenedor-adopciones .tarjeta-mascota p {
+    font-size: 11px;
+    margin: 4px 6px;
+    text-align: center;
+}
+
+.contenedor-adopciones .tarjeta-mascota a {
+    font-size: 11px;
+    padding: 6px 9px;
+}
+
+.oculto {
+    display: none;
+}
+
+.ver-todos {
+    display: block;
+    margin: 15px 0 0 auto;
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    color: var(--marron);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mascota-oculta {
+    display: none;
+}
+
+.ver-todos {
+    text-align: center;
+    margin: 25px auto 0;
+}
+
+.ver-todos button {
+    background-color: var(--marron);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ver-todos button:hover {
+    background-color: var(--verde);
+}
+
+@media (max-width: 900px) {
+    .contenedor-adopciones {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Distribución de las secciones de adopción */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.introduccion-adopta,
+.proceso-adopcion,
+.historias-adopcion {
+    grid-column: 1 / -1;
+}
+
+/* Dos columnas de tarjetas dentro de cada sección */
+.contenedor-mascotas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* Botón Ver todos */
+.ver-todos {
+    text-align: right;
+    margin-top: 20px;
 }
 
 

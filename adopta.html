@@ -5,518 +5,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopta | Huellitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="/css/adopta.css">
+    <link rel="stylesheet" href="css/adopta.css">
 </head>
 
 <body>
 
-    <!-- Barra de navegación -->
     <header>
-
         <nav>
-
-            <h2>🐾 HUELLITAS</h2>
-
+            <h2 class="logo">🐾 HUELLITAS</h2>
+                    <!-- Barra de búsqueda -->
+            <form class="buscador-nav" role="search" id="form-busqueda">
+                <input
+                    type="search"
+                    id="buscar-mascota"
+                    placeholder="Buscar peludito..."
+                    aria-label="Buscar mascota"
+                >
+                <button type="submit" aria-label="Buscar">
+                    🔍
+                </button>
+            </form>
+            <!-- Menú de navegación -->
             <ul>
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="adopta.html" class="activo">ADOPTA</a></li>
                 <li><a href="donacion.html">DONACIÓN</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <!-- Presentación -->
     <main>
 
         <section class="introduccion-adopta">
-            <img src="images/adopta.png" alt="adopta">
+            <img src="images/adopta.png" alt="Huellitas decorativas de la sección de adopción">
+
             <div class="texto-portada">
-                <h1>Encuentra a tu nuevo compañero </h1>
-                <p>Todos nuestros peluditos tienen una historia y están esperando la oportunidad de comenzar una nueva vida. Quizás entre ellos se encuentre esa huellita que está destinada a formar parte de tu familia.</p>
+                <h1>Encuentra a tu nuevo compañero</h1>
+                <p>
+                    Todos nuestros peluditos tienen una historia y están esperando
+                    la oportunidad de comenzar una nueva vida. Quizás entre ellos
+                    se encuentre esa huellita que está destinada a formar parte
+                    de tu familia.
+                </p>
             </div>
         </section>
+        <!-- Perritos y gatitos en dos columnas -->
 
-        <!-- Perritos en adopción -->
+        <div class="contenedor-adopciones">
 
-        <section class="perritos">
+            <!-- Perritos en adopción -->
 
-            <h2>🐶 Perritos en adopción</h2>
+            <section class="perritos">
 
-            <div class="contenedor-mascotas">
-
-
-                <!-- MAX -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/max.png"
-                         alt="Max, perrito en adopción">
-
-                    <h3>Max</h3>
-
-                    <p><strong>Edad:</strong> 2 años</p>
-
-                    <p>
-                        Max fue encontrado cerca de un parque.
-                        Es cariñoso, juguetón y disfruta mucho
-                        de salir a caminar.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- LUNA -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/luna.png"
-                         alt="Luna, perrita en adopción">
-
-                    <h3>Luna</h3>
-
-                    <p><strong>Edad:</strong> 1 año</p>
-
-                    <p>
-                        Luna llegó al refugio siendo muy pequeña.
-                        Es dulce, tranquila y le encanta recibir
-                        caricias.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- ROCKY -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/rocky.png"
-                         alt="Rocky, perrito en adopción">
-
-                    <h3>Rocky</h3>
-
-                    <p><strong>Edad:</strong> 3 años</p>
-
-                    <p>
-                        Rocky es un perrito alegre y sociable.
-                        Le encanta jugar y convivir con otros
-                        perros.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- TOBY -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/toby.png"
-                         alt="Toby, perrito en adopción">
-
-                    <h3>Toby</h3>
-
-                    <p><strong>Edad:</strong> 4 años</p>
-
-                    <p>
-                        Toby fue rescatado de las calles.
-                        Es tranquilo, obediente y muy agradecido
-                        con las personas que lo cuidan.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-                
-                <article class="tarjeta-mascota oculto"></article>
-
-                <!-- SIMBA -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/simba.png"
-                         alt="Simba, perrito en adopción">
-
-                    <h3>Simba</h3>
-
-                    <p><strong>Edad:</strong> 8 meses</p>
-
-                    <p>
-                        Simba es un cachorro lleno de energía.
-                        Le encanta correr, jugar con pelotas y
-                        descubrir cosas nuevas.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- BENJI -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/benji.png"
-                         alt="Benji, perrito en adopción">
-
-                    <h3>Benji</h3>
-
-                    <p><strong>Edad:</strong> 5 años</p>
-
-                    <p>
-                        Benji es tranquilo y cariñoso.
-                        Busca una familia que pueda brindarle
-                        compañía y mucho amor.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- COCO -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/coco.png"
-                         alt="Coco, perrito en adopción">
-
-                    <h3>Coco</h3>
-
-                    <p><strong>Edad:</strong> 2 años</p>
-
-                    <p>
-                        Coco es curioso, divertido y muy cariñoso.
-                        Después de ser rescatado, aprendió a confiar
-                        nuevamente en las personas.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
+                <h2>Perritos en adopción 🐕‍🦺</h2>
 
                 <div class="ver-todos">
                     <button type="button" id="ver-perritos">
                         Ver todos →
                     </button>
                 </div>
-            </div>
 
-        </section>
-
-        <!-- Gatitos en adopción -->
-
-        <section class="gatitos">
-
-            <h2>🐱 Gatitos en adopción</h2>
-
-            <div class="contenedor-mascotas">
-
-
-                <!-- MISHI -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/mishi.png"
-                         alt="Mishi, gatita en adopción">
-
-                    <h3>Mishi</h3>
-
-                    <p><strong>Edad:</strong> 1 año</p>
-
-                    <p>
-                        Mishi es una gatita dulce y curiosa.
-                        Le encanta dormir en lugares cálidos
-                        y recibir caricias.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- NALA -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/nala.png"
-                         alt="Nala, gatita en adopción">
-
-                    <h3>Nala</h3>
-
-                    <p><strong>Edad:</strong> 2 años</p>
-
-                    <p>
-                        Nala fue encontrada junto a sus hermanos.
-                        Es tranquila, cariñosa y disfruta mucho
-                        de la compañía.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- OLIVER -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/oliver.png"
-                         alt="Oliver, gatito en adopción">
-
-                    <h3>Oliver</h3>
-
-                    <p><strong>Edad:</strong> 1 año</p>
-
-                    <p>
-                        Oliver es juguetón y muy curioso.
-                        Puede pasar horas persiguiendo juguetes
-                        y explorando cada rincón.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- SIMÓN -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/simon.png"
-                         alt="Simón, gatito en adopción">
-
-                    <h3>Simón</h3>
-
-                    <p><strong>Edad:</strong> 3 años</p>
-
-                    <p>
-                        Simón es un gato tranquilo que disfruta
-                        de las tardes descansando junto a las
-                        personas.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-                <article class="tarjeta-mascota oculto"></article>
-
-                <!-- MILO -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/milo.png"
-                         alt="Milo, gatito en adopción">
-
-                    <h3>Milo</h3>
-
-                    <p><strong>Edad:</strong> 8 meses</p>
-
-                    <p>
-                        Milo es un pequeño aventurero.
-                        Es juguetón, activo y siempre está
-                        buscando algo nuevo que descubrir.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- CLEO -->
-                <article class="tarjeta-mascota">
-
-                    <img src="/images/cleo.png"
-                         alt="Cleo, gatita en adopción">
-
-                    <h3>Cleo</h3>
-
-                    <p><strong>Edad:</strong> 2 años</p>
-
-                    <p>
-                        Cleo es elegante y tranquila.
-                        Cuando toma confianza se convierte
-                        en una gatita muy cariñosa.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- TOM -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/tom.png"
-                         alt="Tom, gatito en adopción">
-
-                    <h3>Tom</h3>
-
-                    <p><strong>Edad:</strong> 4 años</p>
-
-                    <p>
-                        Tom es un gato tranquilo que busca
-                        una familia donde pueda sentirse
-                        seguro y querido.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- CANELA -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/canela.png"
-                         alt="Canela, gatita en adopción">
-
-                    <h3>Canela</h3>
-
-                    <p><strong>Edad:</strong> 1 año</p>
-
-                    <p>
-                        Canela es dulce, juguetona y muy
-                        sociable. Le encanta dormir cerca
-                        de las personas.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- NUBE -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/nube.png"
-                         alt="Nube, gatita en adopción">
-
-                    <h3>Nube</h3>
-
-                    <p><strong>Edad:</strong> 2 años</p>
-
-                    <p>
-                        Nube llegó al refugio después de ser
-                        encontrada sola. Ahora busca un hogar
-                        tranquilo donde recibir mucho amor.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
-
-                <!-- LEO -->
-                <article class="tarjeta-mascota">
-
-                    <img src="images/leo.png"
-                         alt="Leo, gatito en adopción">
-
-                    <h3>Leo</h3>
-
-                    <p><strong>Edad:</strong> 1 año</p>
-
-                    <p>
-                        Leo es juguetón y muy expresivo.
-                        Le encanta llamar la atención y
-                        acompañar a las personas.
-                    </p>
-
-                    <a href="contacto.html">
-                        Adoptar
-                    </a>
-
-                </article>
-
+                <div class="contenedor-mascotas" id="lista-perritos">
+
+                    <article class="tarjeta-mascota">
+                        <img src="images/max.png" alt="Max, perrito en adopción">
+                        <h3>Max</h3>
+                        <p><strong>Edad:</strong> 2 años</p>
+                        <p>Max fue encontrado cerca de un parque. Es cariñoso, juguetón y disfruta mucho de salir a caminar.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota">
+                        <img src="images/luna.png" alt="Luna, perrita en adopción">
+                        <h3>Luna</h3>
+                        <p><strong>Edad:</strong> 1 año</p>
+                        <p>Luna llegó al refugio siendo muy pequeña. Es dulce, tranquila y le encanta recibir caricias.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota">
+                        <img src="images/rocky.png" alt="Rocky, perrito en adopción">
+                        <h3>Rocky</h3>
+                        <p><strong>Edad:</strong> 3 años</p>
+                        <p>Rocky es un perrito alegre y sociable. Le encanta jugar y convivir con otros perros.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/toby.png" alt="Toby, perrito en adopción">
+                        <h3>Toby</h3>
+                        <p><strong>Edad:</strong> 4 años</p>
+                        <p>Toby fue rescatado de las calles. Es tranquilo, obediente y muy agradecido con las personas que lo cuidan.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/simba.png" alt="Simba, perrito en adopción">
+                        <h3>Simba</h3>
+                        <p><strong>Edad:</strong> 8 meses</p>
+                        <p>Simba es un cachorro lleno de energía. Le encanta correr, jugar con pelotas y descubrir cosas nuevas.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/benji.png" alt="Benji, perrito en adopción">
+                        <h3>Benji</h3>
+                        <p><strong>Edad:</strong> 5 años</p>
+                        <p>Benji es tranquilo y cariñoso. Busca una familia que pueda brindarle compañía y mucho amor.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/coco.png" alt="Coco, perrito en adopción">
+                        <h3>Coco</h3>
+                        <p><strong>Edad:</strong> 2 años</p>
+                        <p>Coco es curioso, divertido y muy cariñoso. Después de ser rescatado, aprendió a confiar nuevamente en las personas.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Gatitos en adopción -->
+
+            <section class="gatitos">
+
+                <h2>Gatitos en adopción 🐈</h2>
+               
                 <div class="ver-todos">
                     <button type="button" id="ver-gatitos">
                         Ver todos →
                     </button>
                 </div>
-            </div>
 
-        </section>
+                <div class="contenedor-mascotas" id="lista-gatitos">
 
+                    <article class="tarjeta-mascota">
+                        <img src="images/mishi.png" alt="Mishi, gatita en adopción">
+                        <h3>Mishi</h3>
+                        <p><strong>Edad:</strong> 1 año</p>
+                        <p>Mishi es una gatita dulce y curiosa. Le encanta dormir en lugares cálidos y recibir caricias.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
 
-        <!-- Proceso de adopción -->
+                    <article class="tarjeta-mascota">
+                        <img src="images/nala.png" alt="Nala, gatita en adopción">
+                        <h3>Nala</h3>
+                        <p><strong>Edad:</strong> 2 años</p>
+                        <p>Nala fue encontrada junto a sus hermanos. Es tranquila, cariñosa y disfruta mucho de la compañía.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota">
+                        <img src="images/oliver.png" alt="Oliver, gatito en adopción">
+                        <h3>Oliver</h3>
+                        <p><strong>Edad:</strong> 1 año</p>
+                        <p>Oliver es juguetón y muy curioso. Puede pasar horas persiguiendo juguetes y explorando cada rincón.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/simon.png" alt="Simón, gatito en adopción">
+                        <h3>Simón</h3>
+                        <p><strong>Edad:</strong> 3 años</p>
+                        <p>Simón es un gato tranquilo que disfruta de las tardes descansando junto a las personas.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/milo.png" alt="Milo, gatito en adopción">
+                        <h3>Milo</h3>
+                        <p><strong>Edad:</strong> 8 meses</p>
+                        <p>Milo es un pequeño aventurero. Es juguetón, activo y siempre está buscando algo nuevo que descubrir.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/cleo.png" alt="Cleo, gatita en adopción">
+                        <h3>Cleo</h3>
+                        <p><strong>Edad:</strong> 2 años</p>
+                        <p>Cleo es elegante y tranquila. Cuando toma confianza se convierte en una gatita muy cariñosa.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/tom.png" alt="Tom, gatito en adopción">
+                        <h3>Tom</h3>
+                        <p><strong>Edad:</strong> 4 años</p>
+                        <p>Tom es un gato tranquilo que busca una familia donde pueda sentirse seguro y querido.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/canela.png" alt="Canela, gatita en adopción">
+                        <h3>Canela</h3>
+                        <p><strong>Edad:</strong> 1 año</p>
+                        <p>Canela es dulce, juguetona y muy sociable. Le encanta dormir cerca de las personas.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/nube.png" alt="Nube, gatita en adopción">
+                        <h3>Nube</h3>
+                        <p><strong>Edad:</strong> 2 años</p>
+                        <p>Nube llegó al refugio después de ser encontrada sola. Ahora busca un hogar tranquilo donde recibir mucho amor.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                    <article class="tarjeta-mascota mascota-oculta">
+                        <img src="images/leo.png" alt="Leo, gatito en adopción">
+                        <h3>Leo</h3>
+                        <p><strong>Edad:</strong> 1 año</p>
+                        <p>Leo es juguetón y muy expresivo. Le encanta llamar la atención y acompañar a las personas.</p>
+                        <a href="contacto.html">Adoptar</a>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Proceso de adopción e historias -->
+    <div class="secciones-finales">
 
         <section class="proceso-adopcion">
-
             <h2>🐾 Proceso de adopción</h2>
 
             <div class="pasos">
-
                 <article>
-                    <h3>1. Conoce</h3>
-                    <p>
-                        Elige al peludito con quien sientas
-                        una conexión especial.
-                    </p>
+                    <h3>1</h3>
+                    <h3>Conoce</h3>
+                    <p>Elige al peludito con quien sientas una conexión especial.</p>
                 </article>
 
                 <article>
-                    <h3>2. Solicita</h3>
-                    <p>
-                        Completa nuestro formulario de
-                        adopción.
-                    </p>
+                    <h3>2</h3>
+                    <h3>Solicita</h3>
+                    <p>Completa nuestro formulario de adopción.</p>
                 </article>
 
                 <article>
-                    <h3>3. Conversemos</h3>
-                    <p>
-                        Conoceremos un poco más sobre ti
-                        y tu hogar.
-                    </p>
+                    <h3>3</h3>
+                    <h3>Conversemos</h3>
+                    <p>Conoceremos un poco más sobre ti y tu hogar.</p>
                 </article>
 
                 <article>
-                    <h3>4. Nueva vida</h3>
-                    <p>
-                        Si todo está listo, comienza una
-                        nueva historia juntos.
-                    </p>
+                    <h3>4</h3>
+                    <h3>Nuestra Vida</h3>
+                    <p>Si todo está listo, comienza una nueva historia juntos.</p>
                 </article>
-
             </div>
-
         </section>
 
-
-        <!-- Historias de adopción -->
-
         <section class="historias-adopcion">
-
             <h2>❤️ Historias de adopción</h2>
 
             <p>
@@ -525,35 +272,19 @@
                 las puertas de su hogar.
             </p>
 
-            <article>
-                <h3>La historia de Bruno</h3>
-
-                <p>
-                    Bruno llegó al refugio después de ser encontrado
-                    solo en la calle. Hoy disfruta de largos paseos
-                    y duerme cada noche junto a su nueva familia.
-                </p>
-            </article>
-
-            <article>
-                <h3>La historia de Mimi</h3>
-
-                <p>
-                    Mimi fue rescatada siendo muy pequeña.
-                    Después de encontrar a su familia, descubrió
-                    que su lugar favorito siempre sería junto a ellos.
-                </p>
-            </article>
-
+            <iframe
+                src="https://www.youtube.com/embed/TUfnY85PKyE?si=Veb3hYB97889O_FK"
+                title="Video de historias de adopción"
+                allowfullscreen>
+            </iframe>
         </section>
+    </div>
 
     </main>
 
     <footer>
         <p class="footer-logo">HUELLITAS</p>
-
         <p>Dejando huellitas de amor en tu hogar ❤️</p>
-
         <p>© 2026 Huellitas - Refugio y Adopción</p>
 
         <div class="redes">
@@ -562,7 +293,12 @@
             <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">◉</a>
         </div>
     </footer>
-    <script src="js/adopta.js"></script>
-</body>
 
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/adopta.js"></script>
+
+</body>
+</html>
+</body>
 </html>

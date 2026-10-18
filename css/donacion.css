@@ -160,7 +160,7 @@ nav ul li a:hover {
 
 .destino-donaciones h2 {
     color: var(--marron);
-    font-size: 32px;
+    font-size: 35px;
     margin-bottom: 40px;
 }
 
@@ -173,15 +173,12 @@ nav ul li a:hover {
 }
 
 .tarjetas-ayuda article {
-    background-color: var(--blanco);
+    background-color: var(--rosa);
     width: 25%;
     padding: 30px 20px;
     border-radius: 20px;
-
     box-shadow: 0 5px 18px rgba(107, 62, 46, 0.10);
-
-    border-top: 5px solid var(--rosa);
-
+    border-top: 5px solid var(--marron);
     transition: 0.3s;
 }
 
@@ -190,49 +187,46 @@ nav ul li a:hover {
 }
 
 .tarjetas-ayuda h3 {
-    color: var(--marron);
-    font-size: 20px;
-    margin-bottom: 12px;
+    color: var(--blanco);
+    font-size: 25px;
+    margin-bottom: 16px;
 }
 
 .tarjetas-ayuda p {
-    color: #60483D;
+    color: var(--blanco);
 }
 
 /* Formas de donar */
 
 .formas-donar {
-    max-width: 1000px;
-    margin: 70px auto;
-    padding: 0 25px;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    padding: 25px;
 }
 
 .formas-donar h2 {
     text-align: center;
     color: var(--marron);
-    font-size: 34px;
-    margin-bottom: 15px;
+    font-size: 35px;
+    margin-bottom: 1px;
 }
 
 .formas-donar > p {
     text-align: center;
     color: #60483D;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* Tarjetas de donación */
 
 .opcion-donacion {
     background-color: var(--blanco);
-
     border: 2px solid #F1D3CE;
-    border-radius: 20px;
-
-    padding: 25px;
-    margin-bottom: 20px;
-
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 5px;
     box-shadow: 0 4px 12px rgba(107, 62, 46, 0.08);
-
     transition: 0.3s;
 }
 
@@ -265,7 +259,7 @@ nav ul li a:hover {
 .opcion-donacion h3 {
     display: inline;
     color: var(--marron);
-    font-size: 21px;
+    font-size: 20px;
 }
 
 
@@ -273,8 +267,9 @@ nav ul li a:hover {
 
 .opcion-donacion p {
     color: #60483D;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 28px;
+    font-size: 15px;
 }
 
 /* Monto personalizado */
@@ -287,26 +282,19 @@ nav ul li a:hover {
     display: block;
     margin-top: 18px;
     margin-left: 28px;
-
     font-weight: bold;
     color: var(--marron);
 }
 
 #monto {
     display: block;
-
-    width: 250px;
-
-    margin-top: 8px;
+    width: 300px;
+    margin-top: 2px;
     margin-left: 28px;
-
     padding: 12px 15px;
-
     border: 2px solid #E9D1CB;
     border-radius: 12px;
-
     background-color: white;
-
     font-size: 16px;
 }
 
@@ -317,45 +305,52 @@ nav ul li a:hover {
 
 /* Botón de donación */
 
+
 .formas-donar button {
     display: block;
-
     margin: 35px auto 0;
+    padding: 14px 32px;
 
     background-color: var(--rosa);
     color: white;
 
-    border: none;
-    border-radius: 25px;
-
-    padding: 14px 30px;
+    border: 2px solid var(--rosa);
+    border-radius: 30px;
 
     font-size: 16px;
     font-weight: bold;
 
     cursor: pointer;
-
-    transition: 0.3s;
+    box-shadow: 0 5px 12px rgba(107, 62, 46, 0.15);
+    transition: all 0.3s ease;
 }
 
 .formas-donar button:hover {
     background-color: var(--marron);
-    transform: translateY(-2px);
+    border-color: var(--marron);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(107, 62, 46, 0.22);
 }
+
+.formas-donar button:active {
+    transform: scale(0.97);
+}
+
 
 /* Métodos de donación */
 
 .metodos-donacion {
+    min-width: 0;
     background-color: #F2E8E2;
-
-    padding: 65px 7%;
-
+    padding: 25px;
+    border-radius: 20px;
     text-align: center;
 }
 
 .metodos-donacion h2 {
     color: var(--marron);
-    font-size: 32px;
+    font-size: 35px;
     margin-bottom: 15px;
 }
 
@@ -365,23 +360,21 @@ nav ul li a:hover {
 }
 
 .metodos {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-
-    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+    max-width: 100%;
     margin: auto;
 }
 
 .metodos article {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
     background-color: var(--blanco);
-
-    width: 30%;
-
     padding: 25px;
-
     border-radius: 18px;
-
     box-shadow: 0 5px 15px rgba(107, 62, 46, 0.08);
 }
 
@@ -394,32 +387,150 @@ nav ul li a:hover {
     color: #60483D;
 }
 
-/* Mensaje final */
+/* CONTENEDOR DE LAS DOS COLUMNAS */
+
+
+.contenedor-donaciones {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 35px;
+    row-gap: 25px;
+    align-items: start;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+
+/* Evitar que las secciones tengan márgenes externos grandes */
+
+.formas-donar {
+    max-width: none;
+    margin: 0;
+    padding: 25px;
+}
+
+.metodos-donacion {
+    padding: 25px;
+    border-radius: 20px;
+}
+
+/* Adaptación para celulares y pantallas pequeñas */
+
+@media (max-width: 900px) {
+    .contenedor-donaciones {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Mensaje final debajo de los métodos de donación */
 
 .mensaje-final {
+    grid-column: 2;
+    grid-row: 2;
     text-align: center;
-
-    padding: 75px 25px;
-
-    background-color: #F2D7D2;
+    background-color: var(--rosa-claro);
+    padding: 30px;
+    margin-top: -280px;
+    border-radius: 20px;
+    align-self: start;
 }
 
 .mensaje-final h2 {
     color: var(--marron);
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin-bottom: 18px;
 }
 
 .mensaje-final p {
-    max-width: 700px;
-
-    margin: 0 auto 15px;
-
     color: #60483D;
-
-    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
+
+/* Logos de los métodos de donación */
+
+.metodos article img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+/* Tarjetas de métodos de pago */
+
+.metodos {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.metodo-pago {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    background-color: var(--blanco);
+    padding: 25px 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(107, 62, 46, 0.08);
+    text-align: left;
+}
+
+.logo-pago {
+    flex-shrink: 0;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-pago img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.info-pago h3 {
+    color: var(--marron);
+    margin: 0 0 10px;
+}
+
+.info-pago p {
+    color: #60483D;
+    margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+    .metodo-pago {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logo-pago {
+        width: 55px;
+    }
+
+    .logo-pago img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* En pantallas pequeñas, el mensaje ocupa todo el ancho */
+
+@media (max-width: 900px) {
+    .mensaje-final {
+        grid-column: 1;
+    }
+}
 /* Pie de página */
 
 footer {

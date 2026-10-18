@@ -131,79 +131,68 @@ nav ul li a:hover {
 /* Contacto */
 
 .contacto {
-    max-width: 1100px;
-
-    margin: 70px auto;
-
+    max-width: 1250px;
+    margin: 55px auto;
     padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 25px;
+    align-items: stretch;
 }
 
 .contacto > h1 {
     text-align: center;
-
     color: var(--marron);
-
     font-size: 38px;
-
     margin-bottom: 15px;
 }
 
 .contacto > p {
     text-align: center;
-
     max-width: 700px;
-
     margin: 0 auto 45px;
-
     color: #60483D;
-
     font-size: 17px;
 }
 
 /* Contenedor principal */
 
+
 .informacion-contacto,
 .formulario {
     background-color: var(--blanco);
-
     border-radius: 22px;
-
-    padding: 35px;
-
+    padding: 30px;
     box-shadow: 0 5px 18px rgba(107, 62, 46, 0.10);
+    min-width: 0;
+    width: 100%;
 }
+
 
 /* Información de contacto */
 
 .informacion-contacto {
     border-top: 5px solid var(--azul);
-
-    margin-bottom: 35px;
+    margin-bottom: 0;
+    align-self: start;
 }
 
 .informacion-contacto h2 {
     color: var(--marron);
-
-    font-size: 27px;
-
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .informacion-contacto p {
     color: #60483D;
-
     margin-bottom: 13px;
-
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .informacion-contacto a {
     color: var(--marron);
-
     font-weight: bold;
-
     text-decoration: none;
-
     border-bottom: 2px solid var(--azul);
 }
 
@@ -219,15 +208,12 @@ nav ul li a:hover {
 
 .formulario h2 {
     color: var(--marron);
-
-    font-size: 27px;
-
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 .formulario > p {
     color: #60483D;
-
     margin-bottom: 30px;
 }
 
@@ -236,11 +222,8 @@ nav ul li a:hover {
 
 .formulario label {
     display: block;
-
     color: var(--marron);
-
     font-weight: bold;
-
     margin-bottom: 7px;
 }
 
@@ -250,23 +233,14 @@ nav ul li a:hover {
 .formulario input,
 .formulario textarea {
     width: 100%;
-
     padding: 13px 15px;
-
     margin-bottom: 20px;
-
     border: 2px solid #D9DEED;
-
     border-radius: 12px;
-
     background-color: #FCFCFE;
-
     color: var(--marron);
-
     font-family: Arial, sans-serif;
-
     font-size: 15px;
-
     transition: 0.3s;
 }
 
@@ -293,33 +267,45 @@ nav ul li a:hover {
     min-height: 150px;
 }
 
+
+.formulario form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+    row-gap: 0;
+}
+
+.formulario label {
+    margin-bottom: 7px;
+}
+
+.formulario input,
+.formulario textarea {
+    min-width: 0;
+}
+
+.formulario textarea,
+.formulario button {
+    grid-column: 1 / -1;
+}
+
+
 .formulario button {
     display: block;
-
     margin: 10px auto 0;
-
     padding: 14px 30px;
-
     border: none;
-
     border-radius: 25px;
-
     background-color: var(--azul);
-
     color: white;
-
     font-size: 16px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .formulario button:hover {
     background-color: var(--marron);
-
     transform: translateY(-2px);
 }
 
@@ -327,26 +313,17 @@ nav ul li a:hover {
 
 .contacto::after {
     content: "🐾 Gracias por querer ser parte de la familia Huellitas ❤️";
-
     display: block;
-
     text-align: center;
-
     margin: 55px auto 10px;
-
     padding: 30px;
-
     max-width: 800px;
-
     background-color: var(--azul-claro);
-
     border-radius: 20px;
-
     color: var(--marron);
-
     font-size: 18px;
-
     font-weight: bold;
+    grid-column: 1 / -1;
 }
 
 /* Pie de página */
@@ -397,6 +374,85 @@ footer p {
     background-color: var(--durazno);
 }
 
+
+
+/* Mapa de ubicación */
+.mapa-contacto {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: var(--azul-claro);
+    border-radius: 18px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mapa-contacto h3 {
+    margin-bottom: 14px;
+    color: var(--marron);
+    font-size: 21px;
+}
+
+.mapa-contacto iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 260px;
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(107, 62, 46, 0.12);
+}
+
+.mapa-contacto a {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 22px;
+    background-color: var(--azul);
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.mapa-contacto a:hover {
+    background-color: var(--marron);
+    transform: translateY(-2px);
+}
+
+
+/* Mensaje de solicitud exitosa */
+.mensaje-exito {
+    margin-top: 22px;
+    padding: 16px;
+    background-color: #E8F3E5;
+    color: #3D7040;
+    border: 2px solid #A8B89A;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    animation: aparecer 0.4s ease;
+}
+
+.mensaje-exito[hidden] {
+    display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* Diseño responsivo */
 
 @media (max-width: 800px) {
@@ -417,7 +473,23 @@ footer p {
         margin-top: 45px;
     }
 
+    
+    .contacto {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .formulario form {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario textarea,
+    .formulario button {
+        grid-column: auto;
+    }
+
 }
+
 
 /* Contacto */
 

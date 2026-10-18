@@ -92,23 +92,17 @@
 
         </section>
 
+    <div class="contenedor-donaciones">
         <!--FORMAS DE DONAR-->
-
         <section class="formas-donar">
-
             <h2>❤️ Elige cómo quieres ayudar</h2>
-
             <p>
                 Selecciona la opción que prefieras. Tu ayuda puede
                 convertirse en comida, cuidados y nuevas oportunidades.
             </p>
 
-
             <form>
-
-
                 <!--Donación libre-->
-
                 <div class="opcion-donacion">
 
                     <input type="radio"
@@ -116,32 +110,25 @@
                            name="tipo-donacion"
                            value="donacion-dinero">
 
-                    <label for="dinero">
-
+                    <div class="detalle-donacion">
                         <h3>💰 Dona dinero</h3>
-
                         <p>
                             Cada granito de arena cuenta.
                             Elige libremente cuánto deseas aportar.
                         </p>
 
-                        <label for="monto">
-                            ¿Cuánto deseas donar?
-                        </label>
+                        <label for="monto">¿Cuánto deseas donar?</label>
 
                         <input type="number"
                                id="monto"
                                name="monto"
                                min="1"
                                placeholder="S/ 0.00">
-
-                    </label>
+                    </div>
 
                 </div>
 
-
                 <!--Baño-->
-
                 <div class="opcion-donacion">
 
                     <input type="radio"
@@ -152,7 +139,6 @@
                     <label for="banio">
 
                         <h3>🛁 Baño y corte — S/ 30</h3>
-
                         <p>
                             Ayúdanos a mantener a uno de nuestros
                             peluditos limpio, cómodo y saludable.
@@ -162,9 +148,7 @@
 
                 </div>
 
-
                 <!-- Veterinario-->
-
                 <div class="opcion-donacion">
 
                     <input type="radio"
@@ -175,7 +159,6 @@
                     <label for="veterinario">
 
                         <h3>🩺 Chequeo veterinario — S/ 50</h3>
-
                         <p>
                             Tu aporte puede ayudar a cubrir el
                             chequeo veterinario de uno de nuestros
@@ -186,9 +169,7 @@
 
                 </div>
 
-
                 <!--Alimentación-->
-
                 <div class="opcion-donacion">
 
                     <input type="radio"
@@ -199,7 +180,6 @@
                     <label for="alimentacion">
 
                         <h3>🥣 Alimentación — S/ 20</h3>
-
                         <p>
                             Ayúdanos a cubrir parte de la alimentación
                             diaria de nuestros peluditos.
@@ -209,9 +189,7 @@
 
                 </div>
 
-
                 <!--Vacunación-->
-
                 <div class="opcion-donacion">
 
                     <input type="radio"
@@ -222,7 +200,6 @@
                     <label for="vacuna">
 
                         <h3>💉 Vacunación — S/ 40</h3>
-
                         <p>
                             Contribuye con las vacunas necesarias
                             para mantenerlos protegidos.
@@ -234,7 +211,7 @@
 
 
                 <button type="submit">
-                    ❤️ Quiero ayudar
+                    Quiero ayudar
                 </button>
 
             </form>
@@ -243,71 +220,75 @@
 
 
         <!--Métodos de donación-->
-
         <section class="metodos-donacion">
 
             <h2>💳 Formas de realizar tu aporte</h2>
-
             <p>
                 Puedes realizar tu donación mediante cualquiera
                 de estos medios:
             </p>
 
 
-            <div class="metodos">
 
-                <article>
+        <div class="metodos">
 
-                    <h3>📱 Yape</h3>
+            <!-- Método de donación: Yape -->
 
-                    <p>
-                        Número: <strong>999 999 999</strong>
-                    </p>
+            <article class="metodo-pago">
+                <div class="logo-pago">
+                    <img src="images/yape.png" alt="Logo de Yape">
+                </div>
 
-                </article>
-
-
-                <article>
-
-                    <h3>📱 Plin</h3>
-
-                    <p>
-                        Número: <strong>999 999 999</strong>
-                    </p>
-
-                </article>
+                <div class="info-pago">
+                    <h3>Yape</h3>
+                    <p><strong>970 644 334</strong></p>
+                </div>
+            </article>
 
 
-                <article>
+            <!-- Método de donación: Plin -->
 
-                    <h3>🏦 Transferencia bancaria</h3>
+            <article class="metodo-pago">
+                <div class="logo-pago">
+                    <img src="images/plin.png" alt="Logo de Plin">
+                </div>
 
-                    <p>
-                        Banco: Banco Huellitas
-                    </p>
+                <div class="info-pago">
+                    <h3>Plin</h3>
+                    <p><strong>970 644 334</strong></p>
+                </div>
+            </article>
 
-                    <p>
-                        Cuenta: 000-0000000000
-                    </p>
 
-                </article>
+            <!-- Método de donación: transferencia bancaria -->
 
-            </div>
+            <article class="metodo-pago">
+                <div class="logo-pago">
+                    <img src="images/banco.png" alt="Transferencia bancaria">
+                </div>
+
+                <div class="info-pago">
+                    <h3>Transferencia bancaria</h3>
+                    <p>Banco: BCP</p>
+                    <p>Cuenta: 00219410114853103198</p>
+                </div>
+            </article>
+
+
+        </div>
+
+
 
         </section>
-
-
         <section class="mensaje-final">
 
             <h2>🐾 Tu ayuda deja una huellita</h2>
-
             <p>
                 Tal vez para ti sea una pequeña ayuda,
                 pero para uno de nuestros peluditos puede
                 significar alimento, atención, cuidado
                 y una oportunidad más para esperar por su hogar.
             </p>
-
             <p>
                 <strong>
                     Gracias por ayudarnos a darles la vida
@@ -316,7 +297,8 @@
             </p>
 
         </section>
-
+    </div>
+    
     </main>
 
     <footer>

@@ -30,7 +30,7 @@ body {
 
 header {
     background-color: var(--blanco);
-    padding: 7px 4%;
+    padding: 18px 5%;
     box-shadow: 0 2px 8px rgba(107, 62, 46, 0.10);
     position: relative;
     z-index: 2;

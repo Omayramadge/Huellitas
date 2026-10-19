@@ -1,4 +1,3 @@
-
 function configurarVerTodos(contenedorSelector, botonId, cantidadInicial) {
     const contenedor = document.querySelector(contenedorSelector);
     const boton = document.getElementById(botonId);

@@ -1,8 +1,3 @@
-
-/* ========================================
-   PALETA DE COLORES
-======================================== */
-
 :root {
     --marron: #6B3E2E;
     --crema: #F8F1E7;
@@ -14,10 +9,6 @@
     --amarillo: #E8C77A;
     --blanco: #FFFDF9;
 }
-
-/* ========================================
-   CONFIGURACIÓN GENERAL
-======================================== */
 
 * {
     box-sizing: border-box;
@@ -46,9 +37,7 @@ main {
     width: 100%;
 }
 
-/* ========================================
-   BARRA DE NAVEGACIÓN
-======================================== */
+/* Barra de navegación */
 
 header {
     background-color: var(--blanco);
@@ -107,10 +96,7 @@ nav ul li a:hover {
     color: white;
 }
 
-
-/* ========================================
-   BARRA DE BÚSQUEDA DEL NAVBAR
-======================================== */
+/* Barra de búsqueda Navbar */
 
 .buscador-nav {
     display: flex;
@@ -154,12 +140,10 @@ nav ul li a:hover {
     opacity: 0.85;
 }
 
-
 /* Ocultar tarjetas que no coinciden con la búsqueda */
 .tarjeta-mascota.resultado-oculto {
     display: none !important;
 }
-
 
 /* Ajuste vertical del navbar de Adopta */
 header nav {
@@ -171,10 +155,7 @@ header nav > ul {
     margin-bottom: 0;
 }
 
-
-/* ========================================
-   PORTADA DE ADOPCIÓN
-======================================== */
+/* Portada de adopción */
 
 .introduccion-adopta {
     position: relative;
@@ -239,9 +220,7 @@ header nav > ul {
     
 }
 
-/* ========================================
-   SECCIONES DE MASCOTAS
-======================================== */
+/* Secciones de mascotas */
 
 .perritos,
 .gatitos {
@@ -282,9 +261,7 @@ header nav > ul {
     margin: 0 auto;
 }
 
-/* ========================================
-   TARJETAS DE MASCOTAS
-======================================== */
+/* Tarjetas de mascotas */
 
 .tarjeta-mascota {
     display: flex;
@@ -369,18 +346,14 @@ header nav > ul {
     transform: translateY(-2px);
 }
 
-/* ========================================
-   OCULTAR MASCOTAS ADICIONALES
-======================================== */
+/* Ocultar mascotas adicionales */
 
 .oculto,
 .mascota-oculta {
     display: none;
 }
 
-/* ========================================
-   BOTÓN VER TODOS
-======================================== */
+/* Botón de ver todos */
 
 .ver-todos {
     display: flex;
@@ -406,10 +379,7 @@ header nav > ul {
     transform: translateY(-2px);
 }
 
-
-/* ========================================
-   PROCESO E HISTORIAS EN DOS COLUMNAS
-======================================== */
+/* Proceso e historias en 2 columnas */
 
 .secciones-finales {
     display: grid;
@@ -429,10 +399,7 @@ header nav > ul {
     border-radius: 8%;
 }
 
-
-/* ========================================
-   PROCESO DE ADOPCIÓN
-======================================== */
+/* Proceso de adopción */
 
 .proceso-adopcion {
     padding: 65px 1%;
@@ -511,9 +478,7 @@ header nav > ul {
     border-radius: 10px;
 }
 
-/* ========================================
-   PIE DE PÁGINA
-======================================== */
+/* Pie de página */
 
 footer {
     display: flex;
@@ -561,9 +526,7 @@ footer p {
     background-color: var(--durazno);
 }
 
-/* ========================================
-   TABLETS
-======================================== */
+/* Diseño responsivo */
 
 @media (max-width: 1050px) {
     .contenedor-adopciones {

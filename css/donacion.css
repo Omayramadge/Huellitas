@@ -1,4 +1,3 @@
-/* Paleta de Colores */
 :root {
     --marron: #6B3E2E;
     --crema: #F8F1E7;
@@ -128,8 +127,6 @@ nav ul li a:hover {
     font-size: 15px;
     line-height: 1.30;
 }
-
-/* Introducción de texto, si la utilizas en otra sección */
 
 .introduccion-texto {
     max-width: 900px;
@@ -305,7 +302,6 @@ nav ul li a:hover {
 
 /* Botón de donación */
 
-
 .formas-donar button {
     display: block;
     margin: 35px auto 0;
@@ -336,7 +332,6 @@ nav ul li a:hover {
 .formas-donar button:active {
     transform: scale(0.97);
 }
-
 
 /* Métodos de donación */
 
@@ -389,7 +384,6 @@ nav ul li a:hover {
 
 /* CONTENEDOR DE LAS DOS COLUMNAS */
 
-
 .contenedor-donaciones {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -401,7 +395,6 @@ nav ul li a:hover {
     margin: 40px auto;
     padding: 0 25px;
 }
-
 
 /* Evitar que las secciones tengan márgenes externos grandes */
 
@@ -423,7 +416,6 @@ nav ul li a:hover {
         grid-template-columns: 1fr;
     }
 }
-
 
 /* Mensaje final debajo de los métodos de donación */
 
@@ -449,7 +441,6 @@ nav ul li a:hover {
     line-height: 1.7;
     margin-bottom: 15px;
 }
-
 
 /* Logos de los métodos de donación */
 
@@ -523,7 +514,6 @@ nav ul li a:hover {
     }
 }
 
-
 /* En pantallas pequeñas, el mensaje ocupa todo el ancho */
 
 @media (max-width: 900px) {
@@ -531,6 +521,7 @@ nav ul li a:hover {
         grid-column: 1;
     }
 }
+
 /* Pie de página */
 
 footer {
